@@ -1,0 +1,79 @@
+.buy-coffee {
+    padding: 20px 0px;
+    .supporters {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #6c757d;
+        span {
+            margin-left: 5px;
+        }
+    }
+    .coffee-options {
+        margin-top: 30px;
+        .numbers {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0px;
+            
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                padding: 5px 13px;
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+            }
+            li.coffee-icon {
+                padding: 0px !important;
+                margin-right: 2px !important;
+            }
+            li.custom-number {
+                padding: 0 !important;
+                input {
+                    width: 35px;
+                    padding: 2px 4px;
+                    text-align: center;
+                }
+            }
+            li.number {
+                padding: 5px 13px;
+                border-radius: 50%;
+                border: 1px solid #6c757c;
+                cursor: pointer;
+            }
+            li.active {
+                background-color: #000;
+                color: #fff
+            }
+            li.button {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                border: 1px solid #eee;
+                background: #000;
+                border: 0;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: .75rem;
+                margin-bottom: .5rem;
+                margin-top: .25rem;
+                outline: none;
+                padding: .5rem 1.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover{
+                    background:#343a40!important
+                }
+            }
+        }
+    }
+}

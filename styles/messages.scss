@@ -1,0 +1,21 @@
+.messages {
+    .message-card {
+        margin-bottom: 20px;
+        box-shadow: 0 10px 35px rgba(0,0,0,.1);
+        border-radius: 3px;
+        padding: 20px;
+        .name {
+            font-size: 14px;
+            b {
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        .message {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+    }
+}

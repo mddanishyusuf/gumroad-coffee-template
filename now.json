@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "alias": [
+        "buy-me-coffee"
+    ],
+    "builds": [{
+        "src": "package.json",
+        "use": "@now/next"
+    }]
+}

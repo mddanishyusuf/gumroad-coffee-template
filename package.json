@@ -1,15 +1,33 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.3.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+	"name": "learn-starter",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint --fix . && echo 'Lint complete.'",
+		"watch": "watch 'npm run -s lint' pages"
+	},
+	"dependencies": {
+		"@zeit/next-sass": "^1.0.1",
+		"bootstrap": "^4.5.0",
+		"dotenv": "^8.2.0",
+		"moment": "^2.26.0",
+		"next": "9.3.5",
+		"next-router-events": "^2.1.0",
+		"node-sass": "^4.14.1",
+		"react": "16.13.1",
+		"react-bootstrap": "^1.0.1",
+		"react-dom": "16.13.1",
+		"react-icons": "^3.10.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.0.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"globby": "^11.0.0",
+		"prettier": "^2.0.5",
+		"watch": "^1.0.2"
+	}
 }
