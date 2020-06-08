@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineHeart, AiOutlineClose } from 'react-icons/ai';
 import { GiCoffeeCup } from 'react-icons/gi';
+import { useRouter } from 'next/router'
 
 import '../styles/buy-coffee.scss';
 
 const BuyCoffee = ({ messages }) => {
-    const [activeNumber, setActiveNumber] = useState(3);
+    const router = useRouter()
+
+    const {quantity} = router.query
+
+    console.log(router.query);
+
+    const [activeNumber, setActiveNumber] = useState(quantity);
 
     useEffect(() => {
         console.log('rendering...');
@@ -13,11 +20,14 @@ const BuyCoffee = ({ messages }) => {
 
     const changeNumber = (num) => {
         setActiveNumber(num);
+        router.push(`/?quantity=${num}`)
     };
 
     const inputChange = (e) => {
         e.preventDefault();
-        setActiveNumber(e.target.value);
+        const num = e.target.value
+        setActiveNumber(num);
+        router.push(`/?quantity=${num}`)
     };
 
     return (
@@ -49,7 +59,7 @@ const BuyCoffee = ({ messages }) => {
                         3
                     </li>
                     <li className="button">
-                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}&wanted=true`}>
+                        <a href={`https://gum.co/rxqNq?quantity=${quantity}&wanted=true`}>
                             Support ${activeNumber * 5}
                         </a>
                     </li>

@@ -57,21 +57,21 @@
                 a {
                     color: #fff;
                     text-decoration: none;
-                }
-                border: 1px solid #eee;
-                background: #000;
-                border: 0;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: .75rem;
-                margin-bottom: .5rem;
-                margin-top: .25rem;
-                outline: none;
-                padding: .5rem 1.5rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                &:hover{
-                    background:#343a40!important
+                    padding: .7rem 1.5rem;
+                    border: 1px solid #eee;
+                    background: #000;
+                    border: 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: .75rem;
+                    margin-bottom: .5rem;
+                    margin-top: .25rem;
+                    outline: none;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover{
+                        background:#343a40!important
+                    }
                 }
             }
         }
