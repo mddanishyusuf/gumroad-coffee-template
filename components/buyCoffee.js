@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineHeart, AiOutlineClose } from 'react-icons/ai';
 import { GiCoffeeCup } from 'react-icons/gi';
 
 import '../styles/buy-coffee.scss';
 
-const BuyCoffee = () => {
-    const [activeNumber, setActiveNumber] = useState(1);
+const BuyCoffee = ({ messages, triggerGumroadFile }) => {
+    const [activeNumber, setActiveNumber] = useState(3);
+
+    useEffect(() => {
+        console.log('rendering...');
+    }, [activeNumber]);
 
     const changeNumber = (num) => {
         setActiveNumber(num);
+        triggerGumroadFile();
     };
 
-    const inputChange = e => {
-        e.preventDefault()
-        setActiveNumber(e.target.value)
-    }
+    const inputChange = (e) => {
+        e.preventDefault();
+        setActiveNumber(e.target.value);
+    };
 
     return (
         <div className="buy-coffee">
             <div className="supporters">
                 <AiOutlineHeart fill="red" />
-                <span>71 supporters</span>
+                <span>{messages.length} supporters</span>
             </div>
             <div className="coffee-options">
                 {/* <h3>Buy Coffee</h3> */}
@@ -33,7 +38,7 @@ const BuyCoffee = () => {
                         <AiOutlineClose size={20} />
                     </li>
                     <li className="custom-number">
-                        <input type="number" value={activeNumber} onChange={inputChange}/>
+                        <input type="number" value={activeNumber} onChange={inputChange} />
                     </li>
                     <li onClick={() => changeNumber(1)} className={activeNumber === 1 ? 'number active' : 'number'}>
                         1
@@ -44,7 +49,9 @@ const BuyCoffee = () => {
                     <li onClick={() => changeNumber(3)} className={activeNumber === 3 ? 'number active' : 'number'}>
                         3
                     </li>
-                    <li className="button"><a href="https://gum.co/rxqNq">Support ${activeNumber * 5}</a></li>
+                    <li className="button">
+                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}`}>Support ${activeNumber * 5}</a>
+                    </li>
                 </ul>
 
                 {/* <ul>
