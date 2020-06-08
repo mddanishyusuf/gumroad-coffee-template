@@ -2,7 +2,8 @@ const fetch = require('node-fetch');
 
 export default (req, res) => {
     res.statusCode = 200;
-    // res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
 
     (async () => {
         const response = await fetch(`https://api.gumroad.com/v2/sales?access_token=${process.env.GUMROAD_ACCESS_TOKEN}`);

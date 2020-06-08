@@ -9,7 +9,6 @@ import 'bootstrap/scss/bootstrap.scss';
 
 export default function Home() {
     const [messages, setMessages] = useState([]);
-    const [flagNumber, setFlagNumber] = useState(0);
 
     useEffect(() => {
         var requestOptions = {
@@ -24,11 +23,7 @@ export default function Home() {
                 setMessages(JSON.parse(result));
             })
             .catch((error) => console.log('error', error));
-    }, [flagNumber]);
-
-    const triggerGumroadFile = () => {
-        setFlagNumber(flagNumber + 1);
-    };
+    }, []);
 
     return (
         <div className="main-container">
@@ -44,7 +39,7 @@ export default function Home() {
                         <ProfileBox />
                     </div>
                     <div className="content-conatiner col-md-8">
-                        <BuyCoffee messages={messages} triggerGumroadFile={triggerGumroadFile} />
+                        <BuyCoffee messages={messages} />
                         <Messages messages={messages} />
                     </div>
                 </div>

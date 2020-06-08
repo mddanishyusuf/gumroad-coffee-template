@@ -4,7 +4,7 @@ import { GiCoffeeCup } from 'react-icons/gi';
 
 import '../styles/buy-coffee.scss';
 
-const BuyCoffee = ({ messages, triggerGumroadFile }) => {
+const BuyCoffee = ({ messages }) => {
     const [activeNumber, setActiveNumber] = useState(3);
 
     useEffect(() => {
@@ -13,7 +13,6 @@ const BuyCoffee = ({ messages, triggerGumroadFile }) => {
 
     const changeNumber = (num) => {
         setActiveNumber(num);
-        triggerGumroadFile();
     };
 
     const inputChange = (e) => {
@@ -50,7 +49,9 @@ const BuyCoffee = ({ messages, triggerGumroadFile }) => {
                         3
                     </li>
                     <li className="button">
-                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}`}>Support ${activeNumber * 5}</a>
+                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}&wanted=true`}>
+                            Support ${activeNumber * 5}
+                        </a>
                     </li>
                 </ul>
 
