@@ -4,6 +4,7 @@ import { GiCoffeeCup } from 'react-icons/gi';
 import { useRouter } from 'next/router'
 
 import '../styles/buy-coffee.scss';
+import profileData from '../data.json'
 
 const BuyCoffee = ({ messages }) => {
     const router = useRouter()
@@ -59,7 +60,7 @@ const BuyCoffee = ({ messages }) => {
                         3
                     </li>
                     <li className="button">
-                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}&wanted=true`}>
+                        <a href={`${profileData.gumroadProductURL}?quantity=${activeNumber}&wanted=true`}>
                             Support ${activeNumber * 5}
                         </a>
                     </li>

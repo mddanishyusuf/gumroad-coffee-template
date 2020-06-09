@@ -37,6 +37,7 @@ Here is the JSON file example:
 
 ```
 {
+    "gumroadProductURL": "https://gum.co/rxqNq",
     "name": "Mohd Danish",
     "subtitle": "Indie Hacker",
     "about": "I'm 26y old Front-end Engineer with Master Degree but I can do anything related with technology. 🚀 I can make MVP in days, 🧙‍♀️ Magic with NodeJS, 🤖 Automate the boring stuffs, 👨‍💻 Hack the third party APIs for any use case, and I always get a solution of the problem. I'm foodie & love to cook 🍳.",
@@ -45,22 +46,26 @@ Here is the JSON file example:
         {
             "name": "Open Source Projects",
             "link": "https://github.com/mddanishyusuf",
-            "type": "github"
+            "type": "github",
+            "category": "work"
         },
         {
             "name": "Open Source Projects",
             "link": "https://mohddanish.me/projects",
-            "type": "projects"
+            "type": "projects",
+            "category": "work"
         },
         {
             "name": "Let's Connect",
             "link": "https://twitter.com/mddanishyusuf",
-            "type": "twitter"
+            "type": "twitter",
+            "category": "social"
         },
         {
             "name": "ProductHunt",
             "link": "https://www.producthunt.com/@mddanishyusuf",
-            "type": "producthunt"
+            "type": "producthunt",
+            "category": "social"
         }
     ]
 }
