@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
+import { FiGithub } from 'react-icons/fi';
+import {AiOutlineCode} from 'react-icons/ai'
 
+import HeadMeta from '../components/head'
 import ProfileBox from '../components/profileBox';
 import BuyCoffee from '../components/buyCoffee';
 import Messages from '../components/messages';
-import '../styles/index.scss';
-import 'bootstrap/scss/bootstrap.scss';
 
 export default function Home() {
     const [messages, setMessages] = useState([]);
@@ -27,12 +27,11 @@ export default function Home() {
 
     return (
         <div className="main-container">
-            <Head>
-                <title>Buy Coffee to Mohd Danish</title>
-                <link rel="icon" href="/favicon.png" />
-                <script type="text/javascript" src="https://gumroad.com/js/gumroad.js" />
-                <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet" />
-            </Head>
+            <HeadMeta />
+            <div className="github-link">
+                <a href="https://github.com/mddanishyusuf/gumroad-coffee-template" target="_blank"><AiOutlineCode /><span>Get the Code</span></a>
+                <a href="https://github.com/mddanishyusuf/gumroad-coffee-template/blob/master/README.md" target="_blank"><FiGithub /><span>Use this template</span></a>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">

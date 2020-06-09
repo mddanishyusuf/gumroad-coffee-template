@@ -9,3 +9,16 @@ body {
     margin: 0 auto;
     padding: 40px 10px;
 }
+
+.github-link{
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    a {
+        margin: 0px 10px;
+        span {
+            margin-left: 5px;
+        }
+    }
+}

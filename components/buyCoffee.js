@@ -12,7 +12,7 @@ const BuyCoffee = ({ messages }) => {
 
     console.log(router.query);
 
-    const [activeNumber, setActiveNumber] = useState(quantity);
+    const [activeNumber, setActiveNumber] = useState(quantity || 3);
 
     useEffect(() => {
         console.log('rendering...');
@@ -59,7 +59,7 @@ const BuyCoffee = ({ messages }) => {
                         3
                     </li>
                     <li className="button">
-                        <a href={`https://gum.co/rxqNq?quantity=${quantity}&wanted=true`}>
+                        <a href={`https://gum.co/rxqNq?quantity=${activeNumber}&wanted=true`}>
                             Support ${activeNumber * 5}
                         </a>
                     </li>

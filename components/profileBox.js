@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaProductHunt, FaTwitter } from 'react-icons/fa';
-import { FiGithub } from 'react-icons/fi';
-import { AiOutlineRocket } from 'react-icons/ai';
 
 import '../styles/profile.scss';
+import profileData from '../data.json'
+import {getIcon} from '../config/function'
+
 
 const ProfileBox = () => {
     return (
@@ -12,38 +12,21 @@ const ProfileBox = () => {
                 <div className="profile-photo">
                     <img src="https://pbs.twimg.com/profile_images/1199611613080276992/94p0_IIQ_400x400.png" alt="" />
                 </div>
-                <h2>Mohd Danish</h2>
-                <small>is building nocodeapi.com</small>
+                <h2>{profileData.name}</h2>
+                <small>{profileData.subtitle}</small>
                 <p>
-                    💻Full Stack Engineer + Independent + Bootstrapped 💯My Indie-Maker Journey of 2019. Building my 9th
-                    bootstrapped micro-startup product in 2019.
+                    {profileData.about}
                 </p>
 
                 <ul>
-                    <li>
-                        <a href="https://github.com/mddanishyusuf" target="_blank" rel="noopener norerferrer">
-                            <FiGithub />
-                            <span>Open Source Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://mohddanish.me/projects" target="_blank" rel="noopener norerferrer">
-                            <AiOutlineRocket />
-                            <span>Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/mddanishyusuf" target="_blank" rel="noopener norerferrer">
-                            <FaTwitter />
-                            <span>Let's Connect</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.producthunt.com/@mddanishyusuf" target="_blank" rel="noopener norerferrer">
-                            <FaProductHunt />
-                            <span>ProductHunt</span>
-                        </a>
-                    </li>
+                    {profileData.links.map((profile, key) => (
+                        <li>
+                            <a href={profile.link} target="_blank" rel="noopener norerferrer">
+                                {getIcon(profile.type)}
+                                <span>{profile.name}</span>
+                            </a>
+                        </li> 
+                    ))}
                 </ul>
             </div>
         </div>
