@@ -29,6 +29,9 @@ export default function Home() {
         <div className="main-container">
             <HeadMeta />
             <div className="github-link">
+                <span>
+                    Coffee page with Gumroad payment
+                </span>
                 <a href="https://github.com/mddanishyusuf/gumroad-coffee-template" target="_blank"><AiOutlineCode /><span>Get the Code</span></a>
                 <a href="https://github.com/mddanishyusuf/gumroad-coffee-template/blob/master/README.md" target="_blank"><FiGithub /><span>Use this template</span></a>
             </div>
