@@ -23,13 +23,17 @@ I'm publishing this page on **https://vercel.com/** service for free and You can
 You have know basic coding nothing more.
 
 ### Step 1:
-Clone the repo on your machine. 
+Fork the repo in your account. and now clone on your machine.
 
-`git clone https://github.com/mddanishyusuf/gumroad-coffee-template.git`
+`git clone https://github.com/<your_github_username>/gumroad-coffee-template.git`
 
 `cd gumroad-coffee-template`
 
 ### Step 2:
+
+Create a product in gumroad.
+
+### Step 3:
 
 Open file name `data.json` in your editor.
 
@@ -73,19 +77,19 @@ Here is the JSON file example:
 
 Change the values with yours.
 
-### Step 3:
+### Step 4:
 After editing the file push the code on your github account. So, you will have your own githu repository.
 
-### Step 4:
+### Step 5:
 Get your Gumroad `Access Token` from your gumroad account. Read here is the official documentation to generate access token https://gumroad.com/api
 
-### Step 5:
+### Step 6:
 Go to https://vercel.com and click on `Import Project` and wait for to deploy.
 
-### Step 6:
+### Step 7:
 After successful deployed then add your `gumroad access token` vercel.com project settings into `Envirement Variables` Section.
 
-### Step 7:
+### Step 8:
 That's all.
 
 ## Thanks
