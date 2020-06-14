@@ -19,7 +19,6 @@ export default function Home() {
         fetch('/api/messages', requestOptions)
             .then((response) => response.text())
             .then((result) => {
-                console.log(JSON.parse(result));
                 setMessages(JSON.parse(result));
             })
             .catch((error) => console.log('error', error));

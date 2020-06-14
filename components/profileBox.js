@@ -20,7 +20,7 @@ const ProfileBox = () => {
 
                 <ul>
                     {profileData.links.map((profile, key) => (
-                        <li>
+                        <li key={key}>
                             <a href={profile.link} target="_blank" rel="noopener norerferrer">
                                 {getIcon(profile.type)}
                                 <span>{profile.name}</span>

@@ -35,7 +35,7 @@ const BuyCoffee = ({ messages }) => {
         <div className="buy-coffee">
             <div className="supporters">
                 <AiOutlineHeart fill="red" />
-                <span>{messages.length} supporters</span>
+                <span>{messages.length} supporters. be one of them.</span>
             </div>
             <div className="coffee-options">
                 {/* <h3>Buy Coffee</h3> */}
