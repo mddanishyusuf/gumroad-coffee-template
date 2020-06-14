@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/messages.scss';
 
 const Messages = ({ messages }) => {
+    console.log('showing messages')
     return (
         <div className="messages">
             {messages.map((message, key) => (
