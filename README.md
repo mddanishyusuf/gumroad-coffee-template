@@ -23,9 +23,9 @@ I'm publishing this page on **https://vercel.com/** service for free and You can
 You have know basic coding nothing more.
 
 ### Step 1:
-Clone the repo on your machine. 
+Fork the repo in your account. and now clone on your machine.
 
-`git clone https://github.com/mddanishyusuf/gumroad-coffee-template.git`
+`git clone https://github.com/<your_github_username>/gumroad-coffee-template.git`
 
 `cd gumroad-coffee-template`
 
