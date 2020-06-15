@@ -1,4 +1,4 @@
-Demo of this project: [https://coffee.mohddanish.me/](https://coffee.mohddanish.me/)
+This Project Demo can be viewed here : [https://coffee.mohddanish.me/](https://coffee.mohddanish.me/)
 
 ## About Me
 
@@ -22,11 +22,11 @@ I'm publishing this page on **https://vercel.com/** service for free and You can
 
 ## How to Setup
 
-You have know basic coding nothing more.
+It's Pretty simple, you just need basic coding skills, a vercel account and a gumroad account!
 
 ### Step 1:
 
-Fork the repo in your account. and now clone on your machine.
+Fork The Repo and Setup on your local system.
 
 `git clone https://github.com/<your_github_username>/gumroad-coffee-template.git`
 
@@ -34,17 +34,15 @@ Fork the repo in your account. and now clone on your machine.
 
 ### Step 2:
 
-Create a product in gumroad.
+Create a New or link an existing product using gumroad, be creative name the product whatever you like maybe it's a ice chai latte or pizza. 
 
 ### Step 3:
 
-Open file name `data.json` in your editor.
-
-Here is the JSON file example:
+Navigate to the \`\`\`data.json\`\`\` File and change the values to match your profile
 
 ```
 {
-    "gumroadProductURL": "https://gum.co/rxqNq",
+    "gumroadProductURL": "https://gum.co/[your-product-url-ending]",
     "name": "Mohd Danish",
     "subtitle": "Indie Hacker",
     "about": "I'm 26y old Front-end Engineer with Master Degree but I can do anything related with technology. 🚀 I can make MVP in days, 🧙‍♀️ Magic with NodeJS, 🤖 Automate the boring stuffs, 👨‍💻 Hack the third party APIs for any use case, and I always get a solution of the problem. I'm foodie & love to cook 🍳.",
@@ -78,19 +76,17 @@ Here is the JSON file example:
 }
 ```
 
-Change the values with yours.
-
 ### Step 4:
 
-After editing the file push the code on your github account. So, you will have your own githu repository.
+Affter editing, push the code stright to your github.
 
 ### Step 5:
 
-Get your Gumroad `Access Token` from your gumroad account. Read here is the official documentation to generate access token https://gumroad.com/api
+Genarate a New Gumroad Access Token, To do this go to [https://gumroad.com/api  ](https://gumroad.com/api) and register a new OUath Application following and using the docs. Copy the Access Token, You'll need soon :
 
 ### Step 6:
 
-Go to https://vercel.com and click on `Import Project` and wait for to deploy.
+Go to https://vercel.com and go to import project, select your repo and start deploying
 
 ### Step 7:
 
@@ -98,7 +94,7 @@ After successful deployed, go to the `Envirement Variables` Section, name the en
 
 ### Step 8:
 
-That's all.
+You're done! Wasn't that easy?
 
 ## Thanks
 
@@ -106,4 +102,4 @@ if you love my work you can support me here with `Caffee latte - cold` - [https:
 
 If you need help to setup this template for you. DM on Twitter - [@mdddanishyusuf](https://twitter.com/mddanishyusuf)
 
-☕️☕️☕️
+☕️☕️☕️☕
