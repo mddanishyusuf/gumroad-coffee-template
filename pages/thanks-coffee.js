@@ -15,7 +15,7 @@ export default function Thanks() {
             <div className="thanks-page">
                 <h2><span>Thanks!</span><GiCoffeeCup /></h2>
                 
-                <p>Big love for the coffee - I’m confident the amount you sent will actually go towards coffee beans:)</p>
+                <p>{profileData.thanksNote}</p>
                 <small>Let's connect</small>
                 <ul>
                     {profileData.links.map((profile, key) => {
