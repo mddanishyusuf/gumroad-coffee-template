@@ -29,7 +29,7 @@ export default function Home() {
             <HeadMeta />
             <div className="github-link">
                 <span>
-                    Coffee page with Gumroad
+                    Coffee page with <a href="https://gumroad.com">Gumroad</a>
                 </span>
                 <a href="https://github.com/mddanishyusuf/gumroad-coffee-template" target="_blank"><AiOutlineCode /><span>Get the Code</span></a>
                 <a href="https://github.com/mddanishyusuf/gumroad-coffee-template/blob/master/README.md" target="_blank"><FiGithub /><span>Use this template</span></a>
