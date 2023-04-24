@@ -16,7 +16,7 @@
 		"moment": "^2.26.0",
 		"next": "9.3.5",
 		"next-router-events": "^2.1.0",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"react": "16.13.1",
 		"react-bootstrap": "^1.0.1",
 		"react-dom": "16.13.1",
